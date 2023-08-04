@@ -1,0 +1,137 @@
+<html>
+<head>
+    <style>
+        /* CSS style for the contact page */
+        body {
+            background-color: #F0F8FF;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4682B4;
+            text-shadow: 2px 2px 4px #B0C4DE;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 45%;
+            height: 300px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            backface-visibility: hidden;
+        }
+
+        .card-front {
+            background-color: #FFFFFF;
+        }
+
+        .card-back {
+            background-color: #B0C4DE;
+            transform: rotateY(180deg);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .card-content {
+            padding: 10px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4682B4;
+        }
+
+        .card-text {
+            font-size: 18px;
+            color: #696969;
+        }
+
+        .card-link {
+            display: block;
+            text-align: right;
+            font-size: 18px;
+            color: #4682B4;
+            text-decoration: none;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <div class="container">
+        <!-- First card for email -->
+        <div class="card">
+            <div class="card-front">
+                <img src="email.jpg" alt="Email icon" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Email Us</h3>
+                    <p class="card-text">Send us an email with your queries or feedback.</p>
+                    <a href="mailto:support@beingtraveler.in" class="card-link">Click here</a>
+                </div>
+            </div>
+            <div class="card-back">
+                <div class="card-content">
+                    <h3 class="card-title">Email Us</h3>
+                    <p class="card-text">Our email address is support@beingtraveler.in.</p>
+                    <p class="card-text">We will try to respond to you as soon as possible.</p>
+                    <p class="card-text">Thank you for choosing Being Traveler.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second card for phone -->
+        <div class="card">
+            <div class="card-front">
+                <img src="phone.jpg" alt="Phone icon" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Call Us</h3>
+                    <p class="card-text">Give us a call and talk to our customer service team.</p>
+                    <a href="tel:+911234567890" class="card-link">Click here</a>
+                </div>
+            </div>
+            <div class="card-back">
+                <div class="card-content">
+                    <h3 class="card-title">Call Us</h3>
+                    <p class="card-text">Our phone number is +91-1234567890.</p>
+                    <p class="card-text">We are available from Monday to Friday, 9 AM to 5 PM.</p>
+                    <p class="card-text">We are happy to assist you with your travel needs.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
