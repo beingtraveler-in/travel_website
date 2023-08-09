@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BeingTraveler - Blog</title>
+  <meta http-equiv='content-language' content='en-gb'>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name='description' content='Explore BeingTraveler's blog for the latest travel tips, destination guides, and inspiring travel stories.'>
+  <!-- Add your CSS and JavaScript here -->
+  <link rel="stylesheet" href="./assets/css/blog.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/js/blog.js"></script>
+  
+ <style>
+  /* Add custom CSS here */
+ 
+ .navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    border-radius: 15px; /* Add curved edges */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Add 3D effect */
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: padding 0.3s;
+    font-size: 20px;
+}
+.navbar a:hover {
+    padding: 20px 16px;
+    background-color: #ddd;
+    color: black;
+}
+.color-change-button {
+    background: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.color-change-button:hover {
+    background-color: blue;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px; 
+    position: fixed; /* This will fix the footer at the bottom */
+    bottom: 0;
+    width: 100%;
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+    border-radius: 15px; /* Curved edges */
+    box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.75); /* 3D effect with white shadow */
+}
+h1 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+</style>
+</head>
+<body>
+<h1>BeingTraveler Blog - Insights and Stories from the World of Travel</h1>
+     <div class="navbar" id="navbar">
+    <a href="index.php">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+  <div id="blog-posts">
+    <!-- Blog posts will go here -->
+  </div>
+  
+  <div> <button class="color-change-button">   </button>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2023 BeingTraveler - Blog. All rights reserved.</p>
+  </div>
+  
+  <script>
+    // Add custom JavaScript here
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 50) {
+        $("#navbar").css("top", "-50px");
+      } else {
+        $("#navbar").css("top", "0");
+      }
+    });
+  </script>
+</body>
+</html>
