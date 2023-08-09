@@ -72,105 +72,25 @@ if (isset($_POST['submit1'])) {
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-   <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
 
   <!-- 
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
-  <!-- Add particles.js library -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
  <!--
  - my edit 
  -->
+ 
  <style>
-@media only screen and (max-width: 767px) {
-  .whatsapp-icon {
-    bottom: 70px;
-    right: 20px;
-  }
-  .whatsapp-icon img {
-    width: 50px;
-    height: 50px;
-    padding: 8px;
-  }
-}
-</style>
+    .gallery {
+      margin-top: 200px; /* adjust the value as needed */
+    }
+  </style>
  
   <style>
-@keyframes shimmer {
-  0% {
-    background-position: -100vw;
-  }
-  100% {
-    background-position: 100vw;
-  }
-}
-
-@keyframes glow {
-  0%, 100% {
-    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700;
-  }
-  50% {
-    text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700, 0 0 60px #FFD700;
-  }
-}
-
-.ribbon-wrapper {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.ribbon {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2vw 4vw;
-  z-index: 2;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.ribbon-text {
-  font-size: 4vw;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Kumar One', cursive;
-  background-image: linear-gradient(
-    to right, 
-    #FFD700 40%, 
-    #FFDF85 50%, 
-    #FFD700 60%
-  );
-  background-size: 200% auto;
-  color: white;
-  overflow: hidden;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  animation: shimmer 2s linear infinite, glow 2s ease-in-out infinite;
-  padding: 1vw 2vw;
-}
-@media (min-width: 768px) {
-  .ribbon-text {
-    font-size: 2vw;
-  }
-}
 .popup-form {
   z-index: 9997;
   position: fixed;
@@ -394,27 +314,70 @@ button[type='submit']:hover {
 
 
 
+
+
+.search-box {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+#search-input {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  padding-left: 40px;
+}
+
+.search-icon {
+  height: 20px;
+  width: 20px;
+  margin-left: -35px;
+}
+  
+@media screen and (max-width: 600px) {
+  #search-input {
+    width: 80%; /* Increase the width to 80% for small screens */
+    padding-left: 20px; /* Decrease padding */
+  }
+
+  .search-icon {
+    margin-left: -30px; /* Adjust icon position */
+  }
+}
+}
+
+@media screen and (max-width: 720px) {
+  #search-input {
+    width: 90%; /* Increase the width to 90% for smaller screens */
+    padding-left: 20px; /* Decrease padding */
+  }
+
+  .search-icon {
+    margin-left: -30px; /* Adjust icon position */
+  }
+}
+
  </style>
  
   <!-- 
     - custom css link
   -->
-
-   
   <link rel="stylesheet" href="./assets/css/style.css">
-  
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
-  <link rel="stylesheet" href="assets/css/sstyle.css">
-  <link rel="stylesheet" href="assets/css/styleg.css">
-  <link rel="stylesheet" href="assets/css/newer.css">
-  
-  <!-- 
-    - preload images
-  -->
-<!--  <link rel="preload" as="image" href="./assets/images/hero-banner.webp">
-  <link rel="preload" as="image" href="./assets/images/preloader.svg"> 
-  -->
-  <!-- Chatra {literal} -->
+   <link rel="stylesheet" href="assets/css/sstyle.css">
+<!-- Chatra {literal} -->
 <script>
     (function(d, w, c) {
         w.ChatraID = 'ad8Mxj9DcY6bGYEF4';
@@ -428,9 +391,7 @@ button[type='submit']:hover {
     })(document, window, 'Chatra');
 </script>
 <!-- /Chatra {/literal} -->
-
-
-
+ 
 </head>
 
 <body>
@@ -441,13 +402,9 @@ button[type='submit']:hover {
 
   <div class="preloader" data-preloader>
     <div class="preloader-inner">
-      <img src="./assets/images/preloader.svg" width="50" height="50" alt="" class="img">
+      <img src="./assets/images/logo.webp" width="50" height="50" alt="" class="img">
     </div>
   </div>
-
- 
-
-
 
   <!-- 
     - #HEADER
@@ -479,7 +436,7 @@ button[type='submit']:hover {
           </li>
 
           <li class="navbar-item">
-            <a href="https://www.beingtraveler.in/about.html" class="navbar-link">About Us</a>
+            <a href="https://www.beingtraveler.in/about.html" class="navbar-link">About</a>
           </li>
 
           <li class="navbar-item">
@@ -488,9 +445,6 @@ button[type='submit']:hover {
 
           <li class="navbar-item">
             <a href="https://www.beingtraveler.in/restaurant" class="navbar-link">Restaurants</a>
-          </li>
-           <li class="navbar-item">
-            <a href="https://www.beingtraveler.in/gallery.php" class="navbar-link">Gallery</a>
           </li>
 
           <li class="navbar-item">
@@ -518,278 +472,31 @@ button[type='submit']:hover {
   </header>
 
 
+<section class="intro-section">
+  <div class="overlaygagan"></div>
+  <h1>Welcome To BeingTraveler</h1>
+  <p class="slogan">Search for the Destinations below...</p>
+</section>
 
+
+
+<div class="search-box">
+  <input type="text" id="search-input" placeholder="Enter destination..." />
+  <img class="search-icon" src="https://icon-library.com/images/search-icon-transparent-background/search-icon-transparent-background-18.jpg" alt="search icon">
+</div>
+
+
+ 
 
 
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
-      <!-- 
-        - #HERO
-      -->
+     
 
-      <section class="section hero" aria-label="hero">
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="./assets/images/lake.jpg">
-    <source src="./assets/images/background.mp4" type="video/mp4">
-  </video>
-        
-        <div class="container">
 
-          <div class="hero-content">
-               <h1 class="h1 title hero-title">
-        Welcome to Being Traveler !
-      </h1>
-      <p class="hero-subtitle">
-        Explore the World
-        <img src="./assets/images/title-icon.svg" width="20" height="20" alt="world icon" class="img">
-      </p>
-      <h1 class="h1 title hero-title">
-        It’s a Big World Out There, Go Explore
-      </h1>
-      <p class="hero-text">
-        We always make our customer happy by providing as many choices as possible
-      </p>
-      <div class="wrapper">
-        <a href="https://www.beingtraveler.in/enquiry.php" class="btn btn-secondary">
-          <span class="span">Plan a Trip</span>
-          <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-        </a>
-        <button class="hero-btn">
-          <div class="btn-img">
-            <img src="./assets/images/hero-button-img.jpg" width="100" height="100" alt="our story" class="img-cover">
-            <ion-icon name="play" aria-hidden="true"></ion-icon>
-          </div>
-          <p class="text">Watch our Story</p>
-        </button>
-      </div>
-    </div>
-    <figure class="hero-banner">
-      <img src="./assets/images/hero-banner.webp" width="631" height="735" alt="hero banner" class="w-100">
-    </figure>
-  </div>
-</section>
 
 
-
-   <!--
-  - BANNER
--->
-
-<div class="bannerg">
-
-  <div class="containerg">
-<h2 class="banner-subtitlegg">Religious Locations Trending in India | Big Offers</h2>
-    <div class="slider-containerg has-scrollbarg">
-
-      <div class="slider-itemg">
-
-        <img src="./assets/images/kedarnath.webp" alt="Visit Kedarnath , Book Now" class="banner-imgg">
-
-        <div class="banner-contentg">
-
-          <p class="banner-subtitleg">Visit Kedarnath !</p>
-
-          <h2 class="banner-titleg">Most visited right now .</h2>
-
-          <p class="banner-textg">
-            starting at &dollar; <b>20%</b> Offer !
-          </p>
-
-          <a href="https://www.beingtraveler.in/booking.html" class="banner-btng">Book now</a>
-
-        </div>
-
-      </div>
-
-      <div class="slider-itemg">
-
-        <img src="./assets/images/rishikesh.webp" alt="Travel to Rishikesh" class="banner-imgg">
-
-        <div class="banner-contentg">
-
-          <p class="banner-subtitleg">Visit Rishikesh !</p>
-
-          <h2 class="banner-titleg">The Origin of Lord Shiva.</h2>
-
-          <p class="banner-textg">
-            starting at &dollar; <b>20%</b> Offer !
-          </p>
-
-          <a href="https://www.beingtraveler.in/booking.html" class="banner-btng">Book now</a>
-
-        </div>
-
-      </div>
-
-      <div class="slider-itemg">
-
-        <img src="./assets/images/mathura.webp" alt="visit mathura" class="banner-imgg">
-
-        <div class="banner-contentg">
-
-          <p class="banner-subtitleg">Visit Mathura !</p>
-
-          <h2 class="banner-titleg">Know Histroy of Lord Krishna.</h2>
-
-          <p class="banner-textg">
-            starting at &dollar; <b>25%</b> Offer !
-          </p>
-
-          <a href="https://www.beingtraveler.in/booking.html" class="banner-btng">Book now</a>
-
-        </div>
-
-      </div>
-
-<div class="slider-itemg">
-
-        <img src="./assets/images/badrinath.webp" alt="Visit Kedarnath , Book Now" class="banner-imgg">
-
-        <div class="banner-contentg">
-
-          <p class="banner-subtitleg">Visit Badrinath !</p>
-
-          <h2 class="banner-titleg">Most visited right now .</h2>
-
-          <p class="banner-textg">
-            starting at &dollar; <b>10%</b> Offer !
-          </p>
-
-          <a href="https://www.beingtraveler.in/booking.html" class="banner-btng">Book now</a>
-
-        </div>
-
-      </div>
-
-      <div class="slider-itemg">
-
-        <img src="./assets/images/varanasi.webp" alt="Travel to Rishikesh" class="banner-imgg">
-
-        <div class="banner-contentg">
-
-          <p class="banner-subtitleg">Visit Varanasi !</p>
-
-          <h2 class="banner-titleg">Visit India's Biggest holy River , The Ganga.</h2>
-
-          <p class="banner-textg">
-            starting at &dollar; <b>20%</b> Offer !
-          </p>
-
-          <a href="https://www.beingtraveler.in/booking.html" class="banner-btng">Book now</a>
-
-        </div>
-
-      </div>
-
-      <div class="slider-itemg">
-
-        <img src="./assets/images/vrindawan.webp" alt="visit mathura" class="banner-imgg">
-
-        <div class="banner-contentg">
-
-          <p class="banner-subtitleg">Visit Vrindawan !</p>
-
-          <h2 class="banner-titleg">The Place of lord krishna.</h2>
-
-          <p class="banner-textg">
-            starting at &dollar; <b>35%</b> Offer !
-          </p>
-
-          <a href="https://www.beingtraveler.in/booking.html" class="banner-btng">Book now</a>
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="ribbon-wrapper">
-  <div id="particles-js"></div>
-  <div class="ribbon">
-    <span class="ribbon-text">जय श्री खाटू श्याम</span>
-  </div>
-</div>
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="section service" aria-label="service">
-        <div class="container">
-
-          <div class="title-wrapper">
-
-            <p class="section-subtitle">
-              What We Serve
-            </p>
-
-            <h2 class="h2 title section-title">Top Values For You</h2>
-
-            <p class="section-text">
-              Try a variety of benefits when
-              using our services.
-            </p>
-
-          </div>
-
-          <div class="service-card">
-
-            <div class="card-icon">
-              <img src="./assets/images/service-icon-1.svg" width="60" height="60" loading="lazy" alt="icon">
-            </div>
-
-            <h3 class="h3 title card-title">Lot Of Choices</h3>
-
-            <p class="card-text">
-              Total 460+ destinations that we work with.
-            </p>
-
-          </div>
-
-          <div class="service-card">
-
-            <div class="card-icon">
-              <img src="./assets/images/service-icon-2.svg" width="60" height="60" loading="lazy" alt="icon">
-            </div>
-
-            <h3 class="h3 title card-title">Best Tour Guide</h3>
-
-            <p class="card-text">
-              Our tour guide with 15+ years of experience.
-            </p>
-
-          </div>
-
-          <div class="service-card">
-
-            <div class="card-icon">
-              <img src="./assets/images/service-icon-3.svg" width="60" height="60" loading="lazy" alt="icon">
-            </div>
-
-            <h3 class="h3 title card-title">Easy Booking</h3>
-
-            <p class="card-text">
-              With an easy and fast ticket purchase process.
-            </p>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-<section class="intro-section">
-  <div class="overlaygagan"></div>
-  <h1>Welcome To BeingTraveler</h1>
-  <p class="slogan">Travel around the World with us...</p>
-</section>
 
 
 
@@ -800,9 +507,9 @@ button[type='submit']:hover {
       <section class="section desti" aria-label="destination">
         <div class="container">
 
-          <p class="section-subtitle">Top destination</p>
+          <p class="section-subtitle">All Destinations :) </p>
 
-          <h2 class="h2 title section-title">Explore Top Destination</h2>
+          <h2 class="h2 title section-title">Explore Most Loved Locations in India !</h2>
 
           <ul class="desti-list">
 
@@ -894,7 +601,7 @@ button[type='submit']:hover {
 
                   <h3 class="h3 title">
                     <a href="booking.html" class="card-title">
-                      Enjoy the Beauty of Mathura Temples
+                      Enjoy the Beauty of Mathura
                     </a>
                   </h3>
 
@@ -1027,14 +734,636 @@ button[type='submit']:hover {
 
               </div>
             </li>
+            
+                        <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/agra.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Agra" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Agra
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Agra, U.P , India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(7.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/varanasi.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Varanasi" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Varanasi
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Uttar Pradesh , India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(4.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/darjeeling.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Darjeeling" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of Darjeeling
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                   Darjeeling, West Bengal , India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(1.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/fatehpur.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Fatehpur Sikri" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Fatehpur Sikri
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Fatehpur Sikri, Uttar Pradesh, India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(11.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/rajasthan.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Rajasthan" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Rajasthan
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Rajasthan, India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(1.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/badrinath.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Badrinath" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Badrinath
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                     Uttarakhand, India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(17.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/gangotri.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Gangotri" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Gangotri
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                     Uttarakhand, India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(7.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/haridwar.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Haridwar" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Haridwar
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Uttar Pradesh, India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(17.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/rishikesh.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Rishikesh" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Rishikesh
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Uttarakhand, India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(17.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/vrindawan.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Vrindavan" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Vrindavan
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Uttar Pradesh, India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(17.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/udaipur.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Udaipur" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Udaipur
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Rajasthan, India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(17.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/yamuna.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Yamunotri "class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Yamunotri
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Uttarakhand, India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(17.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/jaisalmer.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Jaisalmer" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Jaisalmer
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Rajasthan , India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(17.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/keral.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Kerala" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Kerala
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Kerala , India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(1.2k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="desti-card">
+
+                <div class="card-banner img-holder" style="--width: 600; --height: 650;">
+                  <img src="./assets/images/shimla.webp" width="600" height="650" loading="lazy"
+                    alt="Enjoy the Beauty of the Shimla" class="img-cover">
+
+                  <span class="card-price">20% Off</span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="booking.html" class="card-title">
+                      Enjoy the Beauty of the Shimla
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Shimla , India
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+
+                      4.7
+                    </span>
+
+                    <p class="rating-text">(1.9k Review)</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+           
 
           </ul>
 
-          <a href="https://www.beingtraveler.in/package-list.php" class="btn btn-primary">View All Destination</a>
+          <a href="https://www.beingtraveler.in/enquiry.php" class="btn btn-primary">Hmm.. Looking for something else ? Just tell us</a>
 
         </div>
       </section>
 
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-label="service">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <p class="section-subtitle">
+              What We Serve
+            </p>
+
+            <h2 class="h2 title section-title">Top Values For You</h2>
+
+            <p class="section-text">
+              Try a variety of benefits when
+              using our services.
+            </p>
+
+          </div>
+
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="./assets/images/service-icon-1.svg" width="60" height="60" loading="lazy" alt="icon">
+            </div>
+
+            <h3 class="h3 title card-title">Lot Of Choices</h3>
+
+            <p class="card-text">
+              Total 460+ destinations that we work with.
+            </p>
+
+          </div>
+
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="./assets/images/service-icon-2.svg" width="60" height="60" loading="lazy" alt="icon">
+            </div>
+
+            <h3 class="h3 title card-title">Best Tour Guide</h3>
+
+            <p class="card-text">
+              Our tour guide with 15+ years of experience.
+            </p>
+
+          </div>
+
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="./assets/images/service-icon-3.svg" width="60" height="60" loading="lazy" alt="icon">
+            </div>
+
+            <h3 class="h3 title card-title">Easy Booking</h3>
+
+            <p class="card-text">
+              With an easy and fast ticket purchase process.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
 
 
 
@@ -1126,8 +1455,8 @@ button[type='submit']:hover {
 
             <li class="gallery-item">
 
-              <figure class="item-banner img-holder" style="--width: 700; --height: 378;">
-                <img src="./assets/images/gallery-1.webp" width="700" height="378" loading="lazy" alt="gallery"
+              <figure class="item-banner img-holder" style="--width: 700; --height: 925;">
+                <img src="./assets/images/gallery-1.webp" width="700" height="925" loading="lazy" alt="gallery"
                   class="img-cover">
               </figure>
 
@@ -1286,42 +1615,6 @@ button[type='submit']:hover {
               </figure>
 
             </li>
-  <li class="gallery-item">
-
-              <figure class="item-banner img-holder" style="--width: 700; --height: 378;">
-                <img src="./assets/images/gallery-19.webp" width="700" height="378" loading="lazy" alt="gallery"
-                  class="img-cover">
-              </figure>
-
-            </li>
-
-            <li class="gallery-item">
-
-              <figure class="item-banner img-holder" style="--width: 700; --height: 925;">
-                <img src="./assets/images/gallery-20.webp" width="700" height="925" loading="lazy" alt="gallery"
-                  class="img-cover">
-              </figure>
-
-            </li>
-
-            <li class="gallery-item">
-
-              <figure class="item-banner img-holder" style="--width: 700; --height: 840;">
-                <img src="./assets/images/gallery-21.webp" width="700" height="840" loading="lazy" alt="gallery"
-                  class="img-cover">
-              </figure>
-
-            </li>
-
-            <li class="gallery-item">
-
-              <figure class="item-banner img-holder" style="--width: 700; --height: 378;">
-                <img src="./assets/images/gallery-22.webp" width="700" height="378" loading="lazy" alt="gallery"
-                  class="img-cover">
-              </figure>
-
-            </li>
-
 
           </ul>
 
@@ -1330,172 +1623,7 @@ button[type='submit']:hover {
 
 
 
-          <!--
-            - SERVICE
-          -->
 
-          <div class="serviceg">
-
-            
-
-            <div class="service-containerg">
-
-              <a href="#" class="service-itemg">
-
-                <div class="service-icong">
-                  <ion-icon name="boat-outline"></ion-icon>
-                </div>
-
-                <div class="service-contentg">
-
-                  <h3 class="service-titleg">Worldwide Traveling</h3>
-                  <p class="service-descg">We are here for you</p>
-
-                </div>
-
-              </a>
-
-              <a href="#" class="service-itemg">
-              
-                <div class="service-icong">
-                  <ion-icon name="rocket-outline"></ion-icon>
-                </div>
-              
-                <div class="service-contentg">
-              
-                  <h3 class="service-titleg">Quick Booking</h3>
-                  <p class="service-descg">We are very Fast</p>
-              
-                </div>
-              
-              </a>
-
-              <a href="#" class="service-itemg">
-              
-                <div class="service-icong">
-                  <ion-icon name="call-outline"></ion-icon>
-                </div>
-              
-                <div class="service-contentg">
-              
-                  <h3 class="service-titleg">Best Online Support</h3>
-                  <p class="service-descg">Hours: 8AM - 11PM</p>
-              
-                </div>
-              
-              </a>
-
-              <a href="#" class="service-itemg">
-              
-                <div class="service-icong">
-                  <ion-icon name="arrow-undo-outline"></ion-icon>
-                </div>
-              
-                <div class="service-contentg">
-              
-                  <h3 class="service-titleg">Refund Policy</h3>
-                  <p class="service-descg">Easy Refunds </p>
-              
-                </div>
-              
-              </a>
-
-              <a href="#" class="service-itemg">
-              
-                <div class="service-icong">
-                  <ion-icon name="ticket-outline"></ion-icon>
-                </div>
-              
-                <div class="service-contentg">
-              
-                  <h3 class="service-titleg">20% money back</h3>
-                  <p class="service-descg">For Booking over Call</p>
-              
-                </div>
-              
-              </a>
-
-            </div>
-
-          </div>
-
-
-
-   <!--
-  - BANNER
--->
-
-<div class="bannerg">
-
-  <div class="containerg">
-
-    <div class="slider-containerg has-scrollbarg">
-
-      <div class="slider-itemg">
-
-        <img src="./assets/images/agra.webp" alt="Agra Top service , Book Now" class="banner-imgg">
-
-        <div class="banner-contentg">
-
-          <p class="banner-subtitleg">Trending Location</p>
-
-          <h2 class="banner-titleg">Top trending Locations</h2>
-
-          <p class="banner-textg">
-            starting at &dollar; <b>20</b>.00
-          </p>
-
-          <a href="https://www.beingtraveler.in/booking.html" class="banner-btng">Book now</a>
-
-        </div>
-
-      </div>
-
-      <div class="slider-itemg">
-
-        <img src="./assets/images/lake.jpg" alt="modern sunglasses" class="banner-imgg">
-
-        <div class="banner-contentg">
-
-          <p class="banner-subtitleg">Trending Lakes</p>
-
-          <h2 class="banner-titleg">Travel to Top Indian lakes</h2>
-
-          <p class="banner-textg">
-            starting at &dollar; <b>15</b>.00
-          </p>
-
-          <a href="https://www.beingtraveler.in/booking.html" class="banner-btng">Book now</a>
-
-        </div>
-
-      </div>
-
-      <div class="slider-itemg">
-
-        <img src="./assets/images/tajmahal.webp" alt="Tajmahal is waiting For you" class="banner-imgg">
-
-        <div class="banner-contentg">
-
-          <p class="banner-subtitleg">Travel Offer</p>
-
-          <h2 class="banner-titleg">Being Traveler sale</h2>
-
-          <p class="banner-textg">
-            starting at &dollar; <b>29</b>.99
-          </p>
-
-          <a href="https://www.beingtraveler.in/booking.html" class="banner-btng">Book now</a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
 
       <!-- 
         - #CTA
@@ -1516,7 +1644,7 @@ button[type='submit']:hover {
               We have many special offers especially for you.
             </p>
 
-            <a href="https://www.beingtraveler.in/package-list.php" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-primary">Get Started</a>
 
           </div>
 
@@ -1529,6 +1657,10 @@ button[type='submit']:hover {
 
 
 
+
+  <!-- 
+    - #FOOTER
+  -->
 
   <!-- 
     - #FOOTER
@@ -1635,7 +1767,7 @@ button[type='submit']:hover {
           </li>
 
           <li>
-            <a href="https://www.beingtraveler.in/package-list.php" class="footer-link">Packages</a>
+            <a href="https://www.beingtraveler.in/" class="footer-link">Home</a>
           </li>
 
           <li>
@@ -1668,6 +1800,7 @@ button[type='submit']:hover {
       </div>
 
       <div class="footer-bottom">
+          
  <p class="copyright">
          We Accept
         </p>
@@ -1696,25 +1829,50 @@ button[type='submit']:hover {
 
 
 
-<a href="//www.dmca.com/Protection/Status.aspx?ID=207433fd-928d-421d-b731-9c5dd46fafda" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-03.png?ID=207433fd-928d-421d-b731-9c5dd46fafda"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+
+
+
+<script>
+  document.getElementById('search-input').addEventListener('keyup', function(event) {
+    let searchValue = this.value.toLowerCase();
+    let destinationCards = document.querySelectorAll('.desti-card');
+    let firstMatch = null;
+
+    destinationCards.forEach(card => {
+      let title = card.querySelector('.card-title').innerText.toLowerCase();
+      let location = card.querySelector('.card-text').innerText.toLowerCase();
+
+      if(title.includes(searchValue) || location.includes(searchValue)) {
+        card.parentElement.style.display = "";
+
+        if(!firstMatch) {
+          firstMatch = card;
+        }
+      } else {
+        card.parentElement.style.display = "none";
+      }
+    });
+
+    // Scroll to the first matching result
+    if (firstMatch && (event.key === "Enter" || event.which === 13)) {
+      firstMatch.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+</script>
+
 
   <!-- 
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-  
 
   <!-- 
     - ionicon link
   -->
-  
-  <script>  function closeThanksMessage() {
-  document.getElementById('thanks-message').style.display = 'none';
-}</script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <a href="https://api.whatsapp.com/send/?phone=917827573202&text=Hello,%20Get%20in%20touch%20with%20us&app_absent=0" class="whatsapp-icon" target="_blank" style="position: fixed; bottom: 10px; right: 10px; z-index: 9999;">
-  <img src="./assets/images/WhatsApp.webp" alt="WhatsApp Chat" style="width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); padding: 10px;" />
+  <img src="./assets/images/WhatsApp.webp" alt="WhatsApp Chat" style="width: 40px; height: 40px; border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); padding: 5px;" />
 </a>
 
 <div class="popup-form">
@@ -1872,33 +2030,7 @@ function isValidPhone(phone) {
 openForm();
 </script>
 
-<script>
-particlesJS('particles-js', {
-  "particles": {
-    "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#FFD700" // Set to golden color
-    },
-    "shape": {
-      "type": "edge", // Set to lines instead of circles
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#FFD700",
-      "opacity": 0.4,
-      "width": 1
-    },
-    /* More configuration as needed... */
-  }
-});
-</script>
+
 </body>
 
 </html>

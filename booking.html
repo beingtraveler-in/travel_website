@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='description' content='Start your adventure with BeingTraveler. Book unique travel experiences in destinations across the globe.'>
+  <title>BeingTraveler - Quick Booking Page</title>
+  <link rel="stylesheet" href="./assets/css/booking.css">
+</head>
+<body>
+    <div class="content">
+  <h1>Quick Booking Page </h1>
+   <div class="form-card">
+   
+  <form id="booking-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="people">Total Members:</label>
+    <input type="number" id="people" name="people" min="1" required>
+
+    <label for="days">How many Days ? :</label>
+    <input type="number" id="days" name="days" min="1" required>
+
+    <label for="pickup-date">Pickup Day:</label>
+    <input type="date" id="pickup-date" name="pickup-date" required>
+
+    <label for="comment">Anything else ! :</label>
+    <textarea id="comment" name="comment"></textarea>
+
+ 
+  <div class="g-recaptcha" data-sitekey="6Ld4wUAnAAAAAK8zFZ7soST17oEVnDa39xPJK8zh"></div>
+
+        <button type="submit">Finish Booking</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="./assets/js/booking.js"></script>
+</body>
+</html>

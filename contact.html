@@ -1,137 +1,48 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <style>
-        /* CSS style for the contact page */
-        body {
-            background-color: #F0F8FF;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        h1 {
-            text-align: center;
-            color: #4682B4;
-            text-shadow: 2px 2px 4px #B0C4DE;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .card {
-            width: 45%;
-            height: 300px;
-            margin: 20px;
-            border-radius: 15px;
-            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-            transform-style: preserve-3d;
-            transition: all 0.5s ease;
-        }
-
-        .card:hover {
-            transform: rotateY(180deg);
-        }
-
-        .card-front, .card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-            backface-visibility: hidden;
-        }
-
-        .card-front {
-            background-color: #FFFFFF;
-        }
-
-        .card-back {
-            background-color: #B0C4DE;
-            transform: rotateY(180deg);
-        }
-
-        .card-image {
-            width: 100%;
-            height: 60%;
-            object-fit: cover;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-        }
-
-        .card-content {
-            padding: 10px;
-        }
-
-        .card-title {
-            font-size: 24px;
-            font-weight: bold;
-            color: #4682B4;
-        }
-
-        .card-text {
-            font-size: 18px;
-            color: #696969;
-        }
-
-        .card-link {
-            display: block;
-            text-align: right;
-            font-size: 18px;
-            color: #4682B4;
-            text-decoration: none;
-        }
-
-        .card-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='description' content='Reach out to BeingTraveler's team for inquiries, support, or feedback. We are here to ensure your travel experience is exceptional.'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <title>BeingTraveler | Contact</title>
 </head>
+
 <body>
-    <h1>Contact Us</h1>
-    <div class="container">
-        <!-- First card for email -->
-        <div class="card">
-            <div class="card-front">
-                <img src="email.jpg" alt="Email icon" class="card-image">
-                <div class="card-content">
-                    <h3 class="card-title">Email Us</h3>
-                    <p class="card-text">Send us an email with your queries or feedback.</p>
-                    <a href="mailto:support@beingtraveler.in" class="card-link">Click here</a>
-                </div>
-            </div>
-            <div class="card-back">
-                <div class="card-content">
-                    <h3 class="card-title">Email Us</h3>
-                    <p class="card-text">Our email address is support@beingtraveler.in.</p>
-                    <p class="card-text">We will try to respond to you as soon as possible.</p>
-                    <p class="card-text">Thank you for choosing Being Traveler.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Second card for phone -->
-        <div class="card">
-            <div class="card-front">
-                <img src="phone.jpg" alt="Phone icon" class="card-image">
-                <div class="card-content">
-                    <h3 class="card-title">Call Us</h3>
-                    <p class="card-text">Give us a call and talk to our customer service team.</p>
-                    <a href="tel:+911234567890" class="card-link">Click here</a>
-                </div>
-            </div>
-            <div class="card-back">
-                <div class="card-content">
-                    <h3 class="card-title">Call Us</h3>
-                    <p class="card-text">Our phone number is +91-1234567890.</p>
-                    <p class="card-text">We are available from Monday to Friday, 9 AM to 5 PM.</p>
-                    <p class="card-text">We are happy to assist you with your travel needs.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
+  <header>
+    <nav>
+      <a href="index.php" class="home-button">Home</a>
+    </nav>
+  </header>
+  <section class="intro-section">
+    <div class="overlay"></div>
+    <h1>BeingTraveler | Tour & Travels</h1>
+  </section>
+ <section class="content-section">
+  <h1>Contact Us</h1>
+  <p>We would love to hear from you. Please get in touch with us through any of the following channels:</p>
+  <p><i class="fas fa-envelope"></i> Email: contact@beingtraveler.in</p>
+  <p><i class="fas fa-phone-alt"></i> Phone: +91 78275 73202</p>
+  <p><i class="fas fa-map-marker-alt"></i> Office address:</p>
+  <address>
+    1 Main Crossing<br>
+    Runkata<br>
+    Agra, Uttar Pradesh 282007<br>
+    India
+  </address>
+    <p>We are available from Monday to Friday, 9 AM to 6 PM.</p>
+    <p>For any customer service related queries regarding your booking, please email contact@beingtraveler.in or call us at +91 78275 73202. Our travel experts will assist you promptly with any questions you may have.</p>
+    <p>We appreciate you taking the time to reach out to us. Your feedback and suggestions are extremely valuable in helping us enhance our services and better cater to our customers' needs.</p>
+    <p>Thank you for your continued support. We are committed to providing you inspiring and unforgettable travel experiences for years to come!</p>
+    <p>Sincerely,</p>
+    <p>The BeingTraveler Team.</p>
+  </section>
+  <footer>
+    &copy; BeingTraveler. All rights reserved. 2023
+  </footer>
+  
 </body>
-</html>
 
+</html>

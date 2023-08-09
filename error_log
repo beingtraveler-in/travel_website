@@ -1,0 +1,170 @@
+[06-Jul-2023 08:26:24 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/send_email.php on line 4
+[06-Jul-2023 08:26:24 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/send_email.php on line 5
+[06-Jul-2023 08:41:49 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/send_email.php on line 4
+[06-Jul-2023 08:41:49 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/send_email.php on line 5
+[06-Jul-2023 08:42:06 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/send_email.php on line 4
+[06-Jul-2023 08:42:06 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/send_email.php on line 5
+[06-Jul-2023 08:44:30 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/contact.php on line 4
+[06-Jul-2023 08:44:30 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/contact.php on line 5
+[06-Jul-2023 08:44:55 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/contact.php on line 4
+[06-Jul-2023 08:44:55 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/contact.php on line 5
+[06-Jul-2023 08:48:54 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/contact.php on line 5
+[06-Jul-2023 08:48:54 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/contact.php on line 6
+[06-Jul-2023 08:51:54 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/contact.php on line 5
+[06-Jul-2023 08:51:54 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/contact.php on line 6
+[06-Jul-2023 08:52:05 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/contact.php on line 5
+[06-Jul-2023 08:52:05 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/contact.php on line 6
+[06-Jul-2023 08:52:45 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/contact.php on line 5
+[06-Jul-2023 08:52:45 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/contact.php on line 6
+[06-Jul-2023 08:53:08 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/contact.php on line 5
+[06-Jul-2023 08:53:08 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/contact.php on line 6
+[06-Jul-2023 08:53:18 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/contact.php on line 5
+[06-Jul-2023 08:53:18 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/contact.php on line 6
+[07-Jul-2023 02:36:23 UTC] PHP Warning:  Undefined array key "email" in /home/xbnaulyx/public_html/contact.php on line 5
+[07-Jul-2023 02:36:23 UTC] PHP Warning:  Undefined array key "phone" in /home/xbnaulyx/public_html/contact.php on line 6
+[07-Jul-2023 07:21:27 UTC] PHP Parse error:  syntax error, unexpected variable "$conn" in /home/xbnaulyx/public_html/config.php on line 7
+[07-Jul-2023 07:23:10 UTC] PHP Warning:  Undefined variable $conn in /home/xbnaulyx/public_html/register.php on line 4
+[07-Jul-2023 07:23:10 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/xbnaulyx/public_html/register.php:4
+Stack trace:
+#0 /home/xbnaulyx/public_html/register.php(4): mysqli_real_escape_string(NULL, 'gstglife@gmail....')
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/register.php on line 4
+[07-Jul-2023 07:23:42 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/xbnaulyx/public_html/dashboard.php on line 15
+[07-Jul-2023 07:23:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xbnaulyx/public_html/dashboard.php:1) in /home/xbnaulyx/public_html/dashboard.php on line 20
+[07-Jul-2023 07:23:57 UTC] PHP Warning:  Undefined variable $conn in /home/xbnaulyx/public_html/authenticate.php on line 4
+[07-Jul-2023 07:23:57 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/xbnaulyx/public_html/authenticate.php:4
+Stack trace:
+#0 /home/xbnaulyx/public_html/authenticate.php(4): mysqli_real_escape_string(NULL, 'gstglife@gmail....')
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/authenticate.php on line 4
+[07-Jul-2023 10:07:28 UTC] PHP Warning:  Undefined variable $conn in /home/xbnaulyx/public_html/newsletter_signup.php on line 9
+[07-Jul-2023 10:07:28 UTC] PHP Warning:  Attempt to read property "connect_error" on null in /home/xbnaulyx/public_html/newsletter_signup.php on line 9
+[07-Jul-2023 10:07:28 UTC] PHP Warning:  Undefined variable $conn in /home/xbnaulyx/public_html/newsletter_signup.php on line 17
+[07-Jul-2023 10:07:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/xbnaulyx/public_html/newsletter_signup.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 17
+[12-Jul-2023 09:18:08 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/xbnaulyx/public_html/newfile.php on line 1
+[12-Jul-2023 09:18:08 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/xbnaulyx/public_html/newfile.php on line 1
+[12-Jul-2023 09:18:08 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/xbnaulyx/public_html/newfile.php on line 76
+[12-Jul-2023 09:18:08 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/xbnaulyx/public_html/newfile.php on line 76
+[13-Jul-2023 15:04:44 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[13-Jul-2023 15:04:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[13-Jul-2023 15:04:44 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[13-Jul-2023 15:04:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[15-Jul-2023 15:10:27 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[15-Jul-2023 15:10:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[15-Jul-2023 15:10:27 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[15-Jul-2023 15:10:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[17-Jul-2023 15:07:36 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[17-Jul-2023 15:07:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[17-Jul-2023 15:07:36 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[17-Jul-2023 15:07:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[19-Jul-2023 15:08:31 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[19-Jul-2023 15:08:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[19-Jul-2023 15:08:31 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[19-Jul-2023 15:08:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[24-Jul-2023 15:07:36 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[24-Jul-2023 15:07:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[24-Jul-2023 15:07:36 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[24-Jul-2023 15:07:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[26-Jul-2023 15:05:59 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[26-Jul-2023 15:05:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[26-Jul-2023 15:05:59 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[26-Jul-2023 15:05:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[02-Aug-2023 15:01:59 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[02-Aug-2023 15:01:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[02-Aug-2023 15:01:59 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[02-Aug-2023 15:01:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[04-Aug-2023 15:07:43 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[04-Aug-2023 15:07:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[04-Aug-2023 15:07:43 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[04-Aug-2023 15:07:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[06-Aug-2023 15:01:35 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[06-Aug-2023 15:01:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[06-Aug-2023 15:01:35 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[06-Aug-2023 15:01:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[08-Aug-2023 15:08:56 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[08-Aug-2023 15:08:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
+[08-Aug-2023 15:08:56 UTC] PHP Warning:  Undefined array key "email_address" in /home/xbnaulyx/public_html/newsletter_signup.php on line 16
+[08-Aug-2023 15:08:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'email' cannot be null in /home/xbnaulyx/public_html/newsletter_signup.php:30
+Stack trace:
+#0 /home/xbnaulyx/public_html/newsletter_signup.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/xbnaulyx/public_html/newsletter_signup.php on line 30
